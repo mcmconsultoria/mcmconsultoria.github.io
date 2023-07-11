@@ -1,0 +1,61 @@
+body {
+    background-color: #F2F2F2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 360px;
+}
+
+h1 {
+    color: #000;
+    font-size: 24px;
+    font-family: Hind Medium;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-left: 16px;
+    margin-right: 6px;
+}
+
+h2 {
+    color: #000;
+    font-size: 24px;
+    font-family: Hind Medium;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+h3 {
+    color: #000;
+    font-size: 12px;
+    font-family: Hind Medium;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.boticario {
+    background: rgba(90, 120, 96, 0.80);
+}
+
+.natura {
+    background: rgba(255, 105, 19, 0.80);
+}
+
+.eudora {
+    background: rgba(99, 59, 85, 0.80);
+}
+
+.white {
+    background: #FFF;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}

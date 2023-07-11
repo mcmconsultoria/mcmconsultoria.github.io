@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MCM Consultoria</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/flex-center.css">
+    <link rel="stylesheet" href="assets/css/flex-left.css">
+    <link rel="stylesheet" href="assets/css/flex-column-center.css">
+    <link rel="stylesheet" href="assets/css/sections.css">
+    <link rel="stylesheet" href="assets/css/cards.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body>
+    <div class="container">
+        <section class="presentation flex-center">
+            <img class="profile-picture" src="assets/images/marilia.jpg" alt="Marília">
+            <h1 class="identification">Marília Consultoria</h1>
+            <img class="verified" alt="verified" src="assets/images/verificado-principal.svg">
+        </section>
+
+        <section class="store">
+            <img class="cosmetic" src="assets/images/cosmetico.svg" alt="Cosmético">
+            <div class="link-content flex-center">
+                <a class="flex-center" href="https://shopee.com.br/marilia3702" target="_blank">
+                    <div class="link flex-center">
+                        <img class="shopping-cart" alt="Carrinho" src="assets/images/shopping-cart.svg">
+                        <span>Descubra minhas ofertas na Shopee</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="magazines">
+            <h2 class="subtitle">Revistas</h2>
+            <div class="flex-center">
+                <a href="pages/boticario.html">
+                    <div class="card-magazine cards flex-column-center boticario">
+                        <img src="/assets/images/boticario-small.svg" alt="Boticário">
+                        <h3>Boticário</h3>
+                    </div>
+                </a>
+                <a href="pages/natura.html">
+                    <div class="card-magazine cards flex-column-center natura">
+                        <img src="/assets/images/natura-small.svg" alt="Natura">
+                        <h3>Natura</h3>
+                    </div>
+                </a>
+                <a href="pages/eudora.html">
+                    <div class="card-magazine cards flex-column-center eudora">
+                        <img src="/assets/images/eudora-small.svg" alt="Eudora">
+                        <h3>Eudora</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="contatos">
+            <h2 class="subtitle">Contatos</h2>
+            <div class="flex-center">
+                <a href="https://api.whatsapp.com/send/?phone=553498886420&text&type=phone_number" target="_blank">
+                    <div class="card-social-media cards flex-column-center">
+                        <img src="/assets/images/whats-app.svg" alt="Whatsapp">
+                        <h3>Whatsapp</h3>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/mariliac_m/" target="_blank">
+                    <div class="card-social-media cards flex-column-center">
+                        <img src="/assets/images/instagram.svg" alt="Instagram">
+                        <h3>Instagram</h3>
+                    </div>
+                </a>
+                <a href="mailto:marilinhacarvalhomelo@gmail.com">
+                    <div class="card-social-media cards flex-column-center">
+                        <img src="/assets/images/mail.svg" alt="E-mail">
+                        <h3>E-mail</h3>
+                    </div>
+                </a>
+                <a href="https://br.pinterest.com/mariliac_melo/" target="_blank">
+                    <div class="card-social-media cards flex-column-center">
+                        <img src="/assets/images/pinterest.svg" alt="Pinterest">
+                        <h3>Pinterest</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            &copy; feito com <span class="heart">&heartsuit;</span> por <a
+                href="https://github.com/guilhermehenriquesantos" target="_blank"
+                class="footer-link">guilhermehenriquesantos</a>
+        </footer>
+    </div>
+</body>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then((registration) => {
+                    console.log('Service Worker registrado com sucesso:', registration.scope);
+                })
+                .catch((error) => {
+                    console.log('Falha ao registrar o Service Worker:', error);
+                });
+        });
+    }
+</script>
+
+
+</html>

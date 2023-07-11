@@ -1,0 +1,18 @@
+footer {
+    margin-top: 25px;
+    color: #000;
+    font-size: 12px;
+    font-family: Hind Medium;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.footer-link {
+    text-decoration: underline;
+}
+
+.heart {
+    color: red;
+}
